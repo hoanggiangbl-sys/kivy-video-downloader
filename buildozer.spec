@@ -1,22 +1,25 @@
 [app]
+
 title = Video Downloader
 package.name = videodownloader
-package.domain = org.mydownloader
+package.domain = org.test
+
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
+
 version = 1.0.0
 
-# Các thư viện Python ứng dụng sử dụng
-requirements = python3,kivy==2.3.0,yt-dlp,requests,urllib3,certifi,openssl
+requirements = python3,kivy==2.3.0,yt-dlp,requests,urllib3,certifi
 
-# Cấu hình Android
 orientation = portrait
 fullscreen = 0
+
 android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
 android.api = 31
 android.minapi = 21
 android.ndk = 23b
-android.archs = arm64-v8a, armeabi-v7a
+android.accept_sdk_license = True
+android.archs = arm64-v8a
 
 [buildozer]
 log_level = 2
