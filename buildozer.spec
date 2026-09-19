@@ -7,7 +7,7 @@ source.include_exts = py,png,jpg,kv,atlas
 version = 1.0.0
 
 # Các thư viện Python ứng dụng sử dụng
-requirements = python3,kivy==2.3.0,yt-dlp,requests,urllib3,certifi
+requirements = python3,kivy==2.3.0,yt-dlp,requests,urllib3,certifi,openssl
 
 # Cấu hình Android
 orientation = portrait
