@@ -13,9 +13,9 @@ requirements = python3,kivy==2.3.0,yt-dlp,requests,urllib3,certifi
 orientation = portrait
 fullscreen = 0
 android.permissions = INTERNET, READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE
-android.api = 33
+android.api = 31
 android.minapi = 21
-android.ndk = 25b
+android.ndk = 23b
 android.archs = arm64-v8a, armeabi-v7a
 
 [buildozer]
