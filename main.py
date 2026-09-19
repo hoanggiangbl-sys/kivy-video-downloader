@@ -1,3 +1,12 @@
+import sys
+import subprocess
+
+# Tự động cài đặt yt-dlp nếu chưa có trên Android
+try:
+    import yt_dlp
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "yt-dlp"])
+    import yt_dlp
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.textinput import TextInput
